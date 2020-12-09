@@ -1,0 +1,61 @@
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center" id="modalRegisterHeaderID">
+                <h5 class="form-label" id="registerModalh5">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+
+            <!--//////////////////////////////////FORM
+                            //////////////////////////////////FORM!-->
+            <div class="container d-flex justify-content-center align-items-center modal-body">
+                <div class="row">
+
+                    <img src="https://images.pexels.com/photos/347134/pexels-photo-347134.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        alt="" class="card-img-top rounded" id="registerModalImage" />
+
+                    <form action="/register" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label id="labelUsername" class="form-label mt-3" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required autofocus>
+                            <div class="invalid-feedback">
+                                Please fill in a valid username
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label id="labelEmail" class="form-label mt-1" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please fill in a valid email
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label id="labelLocation" class="form-label mt-1" for="inputLocation">Location</label>
+                            <input class="form-control" type="text" id="inputLocation" name="location" required>
+                            <div class="invalid-feedback">
+                                This is not a valid location
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label id="labelAge" class="form-label mt-1" for="inputAge">Age</label>
+                            <input class="form-control" type="number" id="inputAge" name="age" required>
+                            <div class="invalid-feedback">
+                                Please enter your age
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label id="labelPassword" class="form-label mt-1" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid username
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-large mt-3" type="submit" id="registreerKnoppie">gitActive
+                            now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

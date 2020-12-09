@@ -1,0 +1,38 @@
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center" id="modalLoginHeaderID">
+                <h5 class="form-label" id="registerModalh5">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+
+
+
+            <div class="container d-flex justify-content-center align-items-center modal-body">
+                <div class="row">
+
+                    <img src="https://images.pexels.com/photos/1307391/pexels-photo-1307391.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        alt="" class="card-img-top rounded" id="loginModalImage" />
+
+                    <!--//////////////////////////////////FORM/////////////////////////////////FORM!-->
+                    <!--//////////////////////////////////FORM/////////////////////////////////FORM!-->
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label id="labelUsername" class="form-label mt-3" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required autofocus>
+
+                        </div>
+                        <div class="mb-3">
+                            <label id="labelPassword" class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+
+                        </div>
+                        <button class="btn btn-success btn-large mt-4" type="submit" id="loginKnoppie">gitActive
+                            now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

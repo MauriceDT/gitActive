@@ -1,0 +1,153 @@
+body {
+    background: none;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    color: #402626;
+}
+/* override bootstrap */
+.card, .card-img, .card-img-overlay {
+    border-radius: initial;
+}
+.card-img-overlay {
+    padding: 2vw;
+}
+.card-title {
+    font-family: 'Ubuntu', sans-serif;
+}
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    color: #402626;
+}
+.card:hover {
+    box-shadow: 0 0 4px #6FBFB7;
+    margin: -1px;
+}
+
+.c-orange {
+    color: #bf391B !important;
+}
+.c-dbrown {
+    color: #402626 !important;
+}
+.c-lbrown {
+    color: #BF815E !important;
+}
+
+/* own css */
+
+a.card-link {
+    text-decoration: none;
+    color: initial;
+}
+.no-hover:hover {
+    box-shadow: none;
+    margin: 0;
+}
+.com-head {
+    background: url('/img/community-top.jpeg') center;
+    background-size: cover;
+}
+.com-head div {
+    height: 15vw;
+    min-height: 180px;
+}
+.com-head div div h1 {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: auto;
+    color: #6FBFB7;
+    font-weight: bold;
+    text-shadow: 0 0 15px black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.bio {
+    font-family: 'Roboto', sans-serif;
+    border-left: 10px solid #6FBFB7;
+    padding-left: 20px;
+}
+.skew-head {
+    width: 55%;
+    background-color: rgba(192, 58, 27, 0.8);
+    margin-right: -12%;
+    margin-left: auto;
+    transform: skew(35deg)
+}
+
+.skew-head-inner {
+    transform: skew(-35deg);
+    color: white;
+    overflow: hidden;
+    height:100%;
+    margin-left: -5vw;
+}
+.skew-head-inner h2 {
+    font-size: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.p-location {
+    font-size: 3vw;
+    padding-left: 3vw;
+}
+.totalactive {
+    margin-top: -1vw;
+    margin-bottom: 0;
+}
+span.timestr {
+    display: block;
+    font-size: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+
+}
+span.activetime {
+    display: block;
+    font-size: 5vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form-label {
+    text-shadow: none;
+    color: #bf815E;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+#actSubmit {
+    background-color: #bf815E;
+    border: #bf815E;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#actSubmit:hover {
+    background-color: #bf391b;
+    border: #bf391b;
+}
+
+@media (min-width: 992px) {
+    .card-img-overlay {
+        padding: 1rem;
+    }
+    .skew-head-inner {
+        margin-left: -2.5rem;
+    }
+    .skew-head-inner h2{
+        font-size: 2.5rem;
+    }
+    .p-location {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .totalactive {
+        margin-top: 1rem;
+    }
+    span.timestr {
+        font-size: 1.2rem;
+    }
+    span.activetime {
+        font-size: 2.5rem;
+    }
+}
+
+.trKnoppen {
+    color: #6FBFB7;
+    text-shadow: none;
+    
+}

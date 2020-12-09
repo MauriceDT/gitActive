@@ -1,0 +1,24 @@
+<header class="bg-blue">
+    <div>
+        <% if (!currentUser) { %>
+        <a href="/">
+            <h3 class="float-md-left mb-0" id="gitActiveTopLeft">gitActive</h3>
+        </a>
+
+
+        <nav class="nav nav-masthead justify-content-center float-md-right">
+            <a class="nav-link trKnoppen btn" data-toggle="modal" data-target="#loginModal">Login</a>
+            <a class="nav-link trKnoppen btn" data-toggle="modal" data-target="#registerModal">Register</a>
+
+        </nav>
+        <% } else { %>
+        <a href="/community">
+            <h3 class="float-md-left mb-0" id="gitActiveTopLeft">gitActive</h3>
+        </a>
+        <nav class="nav nav-masthead justify-content-center float-md-right">
+            <a class="nav-link trKnoppen btn" href="/logout">Logout</a>
+        </nav>
+        <% } %>
+
+    </div>
+</header>

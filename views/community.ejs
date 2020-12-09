@@ -1,0 +1,84 @@
+<% layout('layouts/boilerplate') %>
+<div class="container-fluid com-head g-0">
+    <div class="container-lg">
+        <div class="row">
+            <h1>Community</h1>
+        </div>
+    </div>
+</div>
+<div class="container-lg mt-5">
+    <div class="row">
+        <div class="col-12 col-sm6 col-lg-8">
+            <div class="row">
+                <% for (let user of users) { %>
+                <div class="col-12 col-sm-6">
+                    <a class="card-link" href="/profile/<%=user._id%> ">
+                        <div class="card mb-4">
+                            <img class="card-img" src="img/<%=user.img %> " alt="">
+                            <div class="card-body">
+                                <h5 class="card-title c-lbrown"><%=user.username %> </h5>
+                                <p class="card-text c-dbrown">Heeft vandaag <%=Math.floor(Math.random() * 11) * 5 + 5%>
+                                    minuten hardgelopen!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title c-orange">
+                                <h4>Hardlooptips</h4>
+                            </div>
+                            <div class="card-text c-brown">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero esse saepe fugit
+                                incidunt ipsum inventore, vel tempore, impedit necessitatibus ullam eius. Laboriosam
+                                fugiat corporis laborum necessitatibus dicta eveniet illo.Aliquam cumque excepturi quis
+                                quibusdam recusandae facilis itaque maiores sint voluptate adipisci hic laudantium
+                                dignissimos illum aspernatur blanditiis neque asperiores, ducimus eius numquam, rem
+                                quasi? Nemo vitae est ratione. Autem.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title c-orange">
+                                <h4>Fietstips</h4>
+                            </div>
+                            <div class="card-text c-dbrown">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reiciendis consequatur,
+                                fugiat quibusdam quia nesciunt consequuntur provident magnam saepe. Quidem voluptates
+                                eaque optio placeat obcaecati quia explicabo dignissimos velit eius?Animi harum, quas
+                                sapiente itaque suscipit pariatur modi nesciunt officia. Nam, suscipit quam, harum est
+                                dolore saepe voluptas rerum alias magni, et esse possimus quibusdam nesciunt dignissimos
+                                repudiandae voluptatum earum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="card-title c-orange">
+                                <h4>Nog iets</h4>
+                            </div>
+                            <div class="card-text c-dbrown">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod pariatur facere eos
+                                corrupti minima repudiandae laborum inventore ducimus maiores autem, ea esse aspernatur,
+                                distinctio omnis unde, quo voluptatum error. Voluptates!Cum, architecto veniam alias
+                                ipsa aliquid doloremque eveniet recusandae beatae quasi at voluptatibus suscipit magni
+                                pariatur neque debitis iure corrupti? Ipsum quo dolore neque, praesentium cupiditate
+                                vero rerum ipsa optio!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

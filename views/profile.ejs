@@ -1,0 +1,56 @@
+<% layout('layouts/boilerplate') %>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2 g-0">
+            <div class="card overflow-hidden no-hover">
+                <img class="card-img" src="/img/<%=user.img %> " alt="">
+                <div class="card-img-overlay skew-head">
+                    <div class="skew-head-inner">
+                        <h2><%=user.username %> </h2>
+                        <p class="p-location">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            <%=user.location %> </p>
+                        <div class="totalactive text-center">
+                            <span class="timestr">Actieve tijd:</span>
+                            <span class="activetime"><%=user.timeactive %> </span>
+                            <span class="timestr">minuten</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bio m-4">Temporibus amet incidunt nostrum velit atque vitae cum quia deserunt, ratione inventore
+                optio earum sint, repellat omnis sunt reiciendis voluptas laboriosam maxime?Autem ab amet cum optio?
+                Aperiam amet dolore reiciendis fuga, qui deleniti unde doloribus. Repellat rerum magnam vero facilis
+                praesentium totam ad impedit blanditiis provident consequatur sit, possimus rem quam!
+            </div>
+            <div class="container-fluid">
+                <form class="row" action="/profile/<%=user._id%>/add" method="post">
+                    <div class="col-12 col-sm-6">
+                        <label class="form-label pl-1" for="activity">Activiteit:</label>
+                        <select class="form-control" name="activity" id="activity">
+                            <option value="hardgelopen">Hardlopen</option>
+                            <option value="gefietst">Fietsen</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <label class="form-label pl-1" for="time">Duur:</label>
+                        <div class="input-group">
+                            <input class="form-control" type="number" name="duration" id="duration" min="5" step="5"
+                                value="10" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">minuten</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                        <label class="form-label" for="submit">&nbsp;</label>
+                        <button class="form-control btn btn-success" id="actSubmit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

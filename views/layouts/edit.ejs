@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.username %></title>
+</head>
+
+<body>
+    <form action="/profile/<%=user._id%>?_method=PUT" method="POST" class="validated-form" novalidate>
+        <div class="mb-3">
+            <label id="labelUsername" class="form-label mt-3" for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="user[username]" required autofocus
+                value="<%= user.username %>">
+
+        </div>
+        <div class="mb-1">
+            <label id="labelEmail" class="form-label mt-1" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="user[email]" required value="<%= user.email %>">
+
+        </div>
+        <div class="mb-1">
+            <label id="labelLocation" class="form-label mt-1" for="inputLocation">Location</label>
+            <input class="form-control" type="text" id="inputLocation" name="user[location]" required
+                value="<%= user.location %>">
+
+        </div>
+        <div class="mb-1">
+            <label id="labelAge" class="form-label mt-1" for="inputAge">Age</label>
+            <input class="form-control" type="number" id="inputAge" name="user[age]" required value="<%= user.age %>">
+
+        </div>
+
+        <button class="btn btn-success btn-large mt-3" type="submit" id="registreerKnoppie">Update Account!</button>
+    </form>
+    <a href="/profile/<%=user._id%>">Back to Profile</a>
+</body>
+
+</html>

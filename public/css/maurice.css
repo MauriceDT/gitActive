@@ -1,0 +1,112 @@
+body.front {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/3601094/pexels-photo-3601094.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+#h1h1 {
+    color: #6fbfb7;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover{
+    color: rgb(191,57,27);
+    border-bottom-color: rgb(191,57,27);
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color:white;
+
+}
+
+.btn-secondary {
+    color: #6fbfb7;
+    background-color: #f2f2f2;
+    text-shadow: none;
+}
+
+.btn-secondary:hover{
+    color: #BF391B;
+    text-shadow: none;
+}
+
+#modalLogin {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+#registerModalh5 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #6fbfb7;
+    text-shadow: none;
+    text-align: center;
+
+
+}
+
+#labelUsername, #labelEmail, #labelPassword, #labelLocation, #labelAge {
+    text-shadow: none;
+    color: #bf815E;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+#gitActiveTopLeft {
+    font-family: 'Ubuntu', sans-serif;
+    color: #6FBFB7
+}
+#motivatieTekst {
+    font-family: 'Roboto', sans-serif;
+}
+#motivatieKnop {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#registreerKnoppie, #loginKnoppie {
+    background-color: #bf815E;
+    border: #bf815E;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#registreerKnoppie, #loginKnoppie:hover {
+    background-color: #bf391b;
+    border: #bf391b;
+}
+
+#modalRegisterHeaderID, #modalLoginHeaderID {
+    border-bottom: none;
+    text-align: center;
+}
+
+.trKnoppen {
+    color: #fffff1;
+    text-shadow: none;
+}

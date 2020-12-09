@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>gitActive</title>
+
+    <!-- here's the syntax for including CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/maurice.css">
+
+    <!-- always load your own CSS file after the Booststrap CSS file -->
+    <!-- so you can override Bootstrap CSS when needed  -->
+    <link rel="stylesheet" href="css/maurice.css" />
+
+    <!-- and include jQuery and Bootstrap -->
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- load your JS file's after (= defer) the DOM is loaded  -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="front d-flex text-center text-white bg-dark ">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <header>
+            <!-- look to the views path we've set in app.js -->
+            <%- include('../partials/header') %>
+        </header>
+
+
+        <!-- did you pass your variables? -->
+        <%- include('../partials/content') %>
+        <%- include('../partials/flash') %>
+
+
+        <footer>
+            <%- include('../partials/footer') %>
+        </footer>
+
+
+        <%- include('../partials/register') %>
+        <%- include('../partials/login') %>
+    </div>
+</body>
+
+</html>
